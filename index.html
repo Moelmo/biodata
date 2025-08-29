@@ -339,7 +339,46 @@
             </table>
         </section>
 
-        
+        <style>
+        /* footer glass style to match bio-card */
+        .site-footer {
+            margin: 1.5rem auto 3rem;
+            width: min(92%, 720px);
+            padding: 0.6rem 0.8rem;
+            border-radius: 10px;
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.015));
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+            font-family: inherit;
+            font-size: 0.95rem;
+            z-index: 1;
+        }
+
+        /* subtle link color if needed */
+        .site-footer a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* reduced motion respect */
+        @media (prefers-reduced-motion: reduce) {
+            .site-footer { transition: none; }
+        }
+
+        /* small screens */
+        @media (max-width: 520px) {
+            .site-footer { font-size: 0.9rem; padding: 0.5rem; }
+        }
+        </style>
+
+        <footer class="site-footer" role="contentinfo" aria-label="Footer">
+            <div>Copyright © 2025 Taufiq TJKT 4</div>
+        </footer>
     </main>
 
 </body>
